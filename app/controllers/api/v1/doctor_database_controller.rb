@@ -3,9 +3,9 @@ class Api::V1::DoctorDatabaseController < ApplicationController
 
   def doctors
     if params[:q] != ''
-      @doctors = RestClient.get("#{@base_url}/doctors?query=#{params[:q]}&location=#{params[:latitude]}%2C#{params[:longitude]}%2C10&user_location=#{params[:latitude]}%2C#{params[:longitude]}&sort=distance-asc&skip=0&limit=10&user_key=#{@api_key}")
+      @doctors = RestClient.get("#{@base_url}/doctors?query=#{params[:q]}&location=#{params[:latitude]}%2C#{params[:longitude]}%2C10&user_location=#{params[:latitude]}%2C#{params[:longitude]}&sort=distance-asc&skip=0&limit=15&user_key=#{@api_key}")
     else
-      @doctors = RestClient.get("#{@base_url}/doctors?location=#{params[:latitude]}%2C#{params[:longitude]}%2C10&user_location=#{params[:latitude]}%2C#{params[:longitude]}&sort=distance-asc&skip=0&limit=10&user_key=#{@api_key}")
+      @doctors = RestClient.get("#{@base_url}/doctors?location=#{params[:latitude]}%2C#{params[:longitude]}%2C10&user_location=#{params[:latitude]}%2C#{params[:longitude]}&sort=distance-asc&skip=0&limit=15&user_key=#{@api_key}")
     end
     render json: @doctors
   end
