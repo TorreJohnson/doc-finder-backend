@@ -41,3 +41,5 @@ config_files.each do |file_name|
     ENV[k.upcase] ||= v
   end
 end
+
+config.assets.initialize_on_precompile = false
