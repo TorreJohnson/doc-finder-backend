@@ -1,5 +1,4 @@
 class Api::V1::GoogleController < ApplicationController
-  require 'JSON'
 
   def create
     api_key = ENV["google_maps_api_key"]
