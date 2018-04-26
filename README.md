@@ -4,7 +4,7 @@
 
 Users can search for physicians either using their current location (via [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation)) or near any address (coordinates found through the Google Geolocation API). Users can search by keyword (physician name, speciality, condition, etc) and can filter search results by insurance, distance, and gender.
 
-**Front end repo can be found here:**
+The front end repo can be found at:
 
 https://github.com/TorreJohnson/doc-finder-frontend
 
