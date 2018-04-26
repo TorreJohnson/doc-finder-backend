@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Doc Finder** is a Flatiron Module 4 final project created by Morganne Gagne and Torre Johnson. The frontend uses React, Semantic UI React Components, and custom CSS styling.
 
-Things you may want to cover:
+Users can search for physicians either using their current location (via [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation)) or near any address (coordinates found through the Google Geolocation API). Users can search by keyword (physician name, speciality, condition, etc) and can filter search results by insurance, distance, and gender.
 
-* Ruby version
+**Doc Finder** utilizes the [BetterDoctor API](https://developer.betterdoctor.com/), a nationwide database of physicians, dentists, and eye doctors. API requests are made through a Rails backend.
 
-* System dependencies
+Production Site: http://doc-finder.herokuapp.com/
 
-* Configuration
+## Using Google Maps API with React
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In order to display physician data on a map, we utilized **react-google-maps** to integrate Google Maps. **react-google-maps** and documentation can be found at [https://github.com/tomchentw/react-google-maps]. We displayed physician locations with custom markers.
